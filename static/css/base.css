@@ -2,6 +2,10 @@ html, body {
     height: 100%;
 }
 
+.page {
+    height: 100%;
+}
+
 .vertical-middle::before {
     content: "";
     width: 0;

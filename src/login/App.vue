@@ -1,24 +1,20 @@
 <template>
     <div class="page login vertical-middle">
         <el-form>
-            <el-row>
-                <el-col :span="24">
-                    <i class="logo el-icon-eleme"></i>
-                    <el-form-item>
-                        <el-input v-model="account" placeholder="账户">
-                            <i slot="prefix" class="el-input__icon el-icon-user"></i>
-                        </el-input>
-                    </el-form-item>
-                    <el-form-item>
-                        <el-input v-model="account" placeholder="密码">
-                            <i slot="prefix" class="el-input__icon el-icon-user"></i>
-                        </el-input>
-                    </el-form-item>
-                    <el-form-item>
-                        <el-button type="primary" size="medium">登录</el-button>
-                    </el-form-item>
-                </el-col>
-            </el-row>
+            <i class="logo el-icon-eleme"></i>
+            <el-form-item>
+                <el-input v-model="account" placeholder="账户">
+                    <i slot="prefix" class="el-input__icon el-icon-user"></i>
+                </el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-input v-model="account" placeholder="密码">
+                    <i slot="prefix" class="el-input__icon el-icon-user"></i>
+                </el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" size="medium">登录</el-button>
+            </el-form-item>
         </el-form>
     </div>
 </template>
@@ -36,7 +32,6 @@ export default {
 
 <style lang="scss">
 .page.login {
-    height: 100%;
     background-color: #2d3a4b;
     text-align: center;
     .logo {
@@ -47,6 +42,8 @@ export default {
         margin-bottom: 20px;
     }
     .el-form {
+        width: 70%;
+        max-width: 450px;
         .el-button {
             width: 100%;
         }
