@@ -1,0 +1,15 @@
+html, body {
+    height: 100%;
+}
+
+.vertical-middle::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.vertical-middle > * {
+    display: inline-block;
+    vertical-align: middle;
+}
